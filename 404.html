@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+		<title>Gilums 3.0</title>
+		
+		<!-- ESTILOS -->
+		<link type="text/css" rel="stylesheet" href="css/magic-bootstrap.css">
+		<link href="css/404.css" rel="stylesheet">
+		<!--<link rel="stylesheet" href="css/ihover.css">-->
+
+		<!-- FONT AWESOME -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		
+
+	</head>
+	<body data-spy="scroll" data-target=".menu" id="not-found">
+       <div class="jumboton mensaje text-center">
+            <h1 class="glitch" data-text="404">404</h1>
+            <h2 class="glitch" data-text="404">Error</h2>
+       </div>
+      <div id="holder">
+          <span id="story"></span>
+          <div id="kick"></div>
+      </div>
+		
+
+		<!-- SCRIPTS -->
+		<script type="text/javascript" src="js/jquery.js"></script>     
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<!--<script type="text/javascript" src="js/smoothscroll.js"></script>-->
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+		<!--<script type="text/javascript" src="js/jquery.textillate.js"></script>-->
+        <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/efecto.js"></script>
+        <script src="js/typed.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/gilums.js"></script> 
+        
+        <script>
+            $(function(){
+/*                var weekdays = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+                var dayOfWeekIndex = (new Date()).getDay();
+                var dayOfWeek = weekdays[dayOfWeekIndex];
+                var dayOfWeekPastIndex = Math.floor(weekdays.length * Math.random());
+                var dayOfWeekPast;
+                var hourOfDay = new Date().getHours();
+                var timeOfDay;
+                // choose day of week other than current one
+                if (dayOfWeekPastIndex == dayOfWeekIndex) {
+                  dayOfWeekPast = weekdays[(dayOfWeekPastIndex + 1) % weekdays.length];
+                } else {
+                  dayOfWeekPast = weekdays[dayOfWeekPastIndex];
+                }
+                // assign time of day to the hour
+                if ((hourOfDay >= 4) && (hourOfDay <= 11)) {
+                  timeOfDay = "morning";
+                } else if ((hourOfDay >= 12) && (hourOfDay <= 16)) {
+                  timeOfDay = "afternoon";
+                } else { 
+                  timeOfDay = "evening";
+                }*/
+                // make conversation
+                $('#story').typed({
+                    strings: ["Hay alguien ahi? ^2000 \n..No se que paso! Ayuda no puedo volver! ^2000 \nEso es por ir por donde no debo.^1000 \nSaquenme de aquiiiii.^1000 \nA donde se fueron! ^300 No lo volvere a hacer! ^1000 \n<strong>No lo vuelvas a hacer.^1000 \nClick en el siguiente link.^3000 \nGilums!!</strong>."],
+                    typeSpeed: 20,
+                    backDelay: 500,
+                    loop: false,
+                    loopCount: false,
+                });
+            });
+            $(document).ready(function() {
+              setTimeout(function() {
+                // send 'em packing 
+                $('#kick').append('<a href="/index.html">HOME</a>');
+              }, 30000);
+            });
+        </script>
+		<!-- END | SCRIPTS -->
+
+	</body>
+</html>

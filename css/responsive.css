@@ -1,0 +1,136 @@
+@media screen and (min-width: 1200px) {
+  .logo{
+      margin-top: 15px;
+  }
+  .menu-index{
+      margin-top: 15px;
+  }
+  .logo>a>img{
+      width: 290px;
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    transition: all 1s !important;      
+  }
+  #logo {
+    margin-top: 100px !important;
+    width: 200px;
+  }
+  #texto {
+    width: 350px;
+  }
+  .cd-headline{
+    font-size: 50px !important;
+  }
+  .cd-words-wrapper{
+      font-size: 50px;
+  }
+  .lenguajes>i, .lenguajes>span{
+    font-size: 55px;
+    padding-right:8px; 
+    padding-left:8px; 
+  }
+  .cd-headline {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .logo>a>img{
+      width: 290px;
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    transition: all 1s !important;
+  }
+  #logo {
+    margin-top: 70px !important;
+    width: 150px;
+  }
+  #texto {
+    width: 280px;
+  }
+  .cd-headline{
+    font-size: 44px !important;
+  }
+  .cd-words-wrapper{
+      font-size: 44px;
+  }
+
+  .lenguajes>i, .lenguajes>span{
+    font-size: 45px;
+    padding-right:3px; 
+    padding-left:3px; 
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .logo>a>img{
+    width: 290px;
+    -webkit-transition: all 0.5s !important;
+    -moz-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+  }
+  #logo {
+    margin-top: 50px !important;
+    width: 100px;
+  }
+  #texto {
+    width: 200px;
+  }
+  .cd-headline{
+    font-size: 35px !important;
+  }
+  .cd-words-wrapper{
+      font-size: 35px;
+  }
+
+  .lenguajes>i, .lenguajes>span{
+    font-size: 35px;
+    padding-right:1px; 
+    padding-left:1px; 
+  }
+  .cd-headline {
+    font-size: 4.4rem;
+    font-weight: 300;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .logo>a>img{
+      width: 200px;
+  }
+  #logo {
+    margin-top: 40px !important;
+    width: 100px;
+  }
+  #texto {
+    width: 200px;
+  }
+  .cd-headline{
+    font-size: 30px !important;
+  }
+  .cd-words-wrapper{
+      font-size: 30px;
+  }
+
+  .lenguajes>i, .lenguajes>span{
+    font-size: 35px;
+    padding-right:1px; 
+    padding-left:1px; 
+  }
+  .scroll {
+    font-size: 18px;
+    width: 50px;
+    height: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    
+}
