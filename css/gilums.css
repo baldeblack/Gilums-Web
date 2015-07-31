@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Metrophobic|Raleway:100,300|Merriweather+Sans:400,300,300italic,400italic|Lobster|Kavoon|Roboto:400,300,700,700italic|Source+Sans+Pro:200,300,400,200italic,300italic,400italic|Lato:300,400,700|Economica:400,700);
 @import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bowlby+One+SC);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
 
 @font-face {
     font-family: 'AndThenItEnds';
@@ -312,7 +313,8 @@ a:hover{
 }
 .header_section_b h1{
     font-size: 50px;
-    font-family: 'Merriweather Sans', sans-serif;
+    /*font-family: 'Merriweather Sans', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: white !important;
@@ -323,7 +325,8 @@ a:hover{
 }
 
 .header_section_b h3{
-    font-family: 'Merriweather Sans', sans-serif;
+   /* font-family: 'Merriweather Sans', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -341,7 +344,8 @@ a:hover{
     margin-bottom:50px;
 }
 .header_section_c h1{
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
