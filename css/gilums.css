@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Metrophobic|Raleway:100,300|Merriweather+Sans:400,300,300italic,400italic|Lobster|Kavoon|Roboto:400,300,700,700italic|Source+Sans+Pro:200,300,400,200italic,300italic,400italic|Lato:300,400,700|Economica:400,700);
 @import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bowlby+One+SC);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
 
 @font-face {
     font-family: 'AndThenItEnds';
@@ -65,18 +66,18 @@ button.navbar-toggle:hover{
   height: 112px !important;
   background-color: rgba(0,56,100,.8) !important;
   font-size: 20px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /* COLOR DE LAS BARRITAS DEL BOTON OCULTO*/
 .icon-bar{
     background: rgb(39, 40, 34);
 }
 .menu-index{
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .menu-index>li>a{
     font-family: 'Open Sans Condensed', 'Helvetica Neue', sans-serif;
@@ -121,9 +122,9 @@ a:hover{
     margin-left:auto;
     margin-right:auto;
     text-align:center;
-    -webkit-transition: all 1s !important;
-    -moz-transition: all 1s !important;
-    transition: all 1s !important;
+    -webkit-transition: all 0.5s !important;
+    -moz-transition: all 0.5s !important;
+    transition: all 0.5s !important;
 }
 
 /*-----------------<<<<<<<<<<<<<<<<<< ANIMACION LOGO >>>>>>>>>>>>>>>>>>>---------------------*/
@@ -286,14 +287,13 @@ a:hover{
 }
 
 .lenguajes{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
   color: white;
 }
 
 .lenguajes>i:hover, .lenguajes>span:hover{
   color: white;
-
 }
 
 /*--- END | HEADER ---*/
@@ -313,7 +313,8 @@ a:hover{
 }
 .header_section_b h1{
     font-size: 50px;
-    font-family: 'Merriweather Sans', sans-serif;
+    /*font-family: 'Merriweather Sans', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: white !important;
@@ -324,7 +325,7 @@ a:hover{
 }
 
 .header_section_b h3{
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -367,9 +368,12 @@ a:hover{
 
 /*--- SECTION PORTFOLIO ---*/
 .portfolio{
-    height: 600px;
     /*background-color: rgb(11,11,11);*/
     background-color: white;    
+}
+
+.isotope{
+  padding-bottom: 50px;
 }
 
 .destacados{
@@ -457,10 +461,10 @@ a:hover{
 .nav.nav-justified > li > a > img { width: 128px;height: 128px; box-shadow: 0 0 0 5px #1383B9; }
 .nav.nav-justified > li > a > img { 
     max-width: 100%;
-    -moz-filter:grayscale(1);/* Mozilla */
-    -ms-filter:grayscale(1);/* Internet Explorer */
-    -o-filter:grayscale(1);/* Opera */
-    -webkit-filter: grayscale(1); /* Blanco y negro */
+    -moz-filter:grayscale(0.5);/* Mozilla */
+    -ms-filter:grayscale(0.5);/* Internet Explorer */
+    -o-filter:grayscale(0.5);/* Opera */
+    -webkit-filter: grayscale(0.5); /* Blanco y negro */
     
 /*    opacity: .3; */
     -webkit-transform: scale(.8,.8);
@@ -481,7 +485,7 @@ a:hover{
     -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.tab-pane .tab-inner { padding: 30px 0 30px; }
+.tab-pane .tab-inner { padding: 30px 0 0px; }
 
 .somos_contenido{
   padding-bottom: 30px;
@@ -496,9 +500,27 @@ a:hover{
 }
 
 .color3{
-  background-color: #2DD0B3;
+  background-color: rgb(39, 40, 34);
 }
 
+.info-nosotros p{
+  color: white;
+}
+
+.titulo-nosotros h1{
+  padding:10px;
+  background-color: rgba(0,0,0,0.4);
+  font-family: 'Raleway';
+  color: white;
+}
+.titulo-nosotros h3{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
 /*#gas,#bryan,#cas{
   padding-bottom: 100px;
 }*/
@@ -726,12 +748,12 @@ a:hover{
     margin-top: -10px;
     padding-top:20px;
     text-align:center;
-    background-attachment: relative;
-    background-position: center center;
+/*    background-attachment: relative;
+    background-position: center center;*/
 
     width: 100%;
     
-    -webkit-background-size: 100%;
+/*    -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
@@ -740,15 +762,38 @@ a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+*/
 
 }
+
+#filters button{
+  padding: 10px 20px;
+  border: 1px solid #AF1D50;
+  color: #AF1D50;
+  background: transparent;
+}
+#filters button:focus{
+  outline: inherit;
+}
+#filters button:hover{
+  padding: 10px 20px;
+  border: 1px solid #AF1D50;
+  color: white;
+  background: #AF1D50;
+}
+#filters button.is-checked{
+  padding: 10px 20px;
+  border: 1px solid #AF1D50;
+  color: white;
+  background: #AF1D50;
+}
+
 /*--- END | SECTION HACEMOS ---*/
 
 /*--- SECTION PROCESO ---*/
 .proceso{
     /*background: url(../img/125_2.jpg) 50% 0 fixed;*/
-    background: rgba(0,0,0,1) !important;
+    background: white;
     padding-top:20px;
     text-align:center;
 }
@@ -757,7 +802,7 @@ a:hover{
 
 /*--- SECTION TECNO ---*/
 .tecno {
-    background: linear-gradient(to right, rgba(0, 56, 113, 0.6),  rgba(0, 56, 113, 0.6)),url(../img/12_2.jpg) 50% 0 fixed;
+    background: linear-gradient(to right, rgba(0, 56, 113, 0),  rgba(0, 56, 113, 0)),url(../img/back2.png) 50% 0 fixed;
     margin-top: -10px;
     padding-top:20px;
     text-align:center;
@@ -807,16 +852,15 @@ a:hover{
 
 /*--- SECTION CONTACTO---*/
 .contacto {
-    background-color: #1383B9;
+    /*background-color: #1383B9;*/
     /*background: url(../img/1773186.png), url(../img/montevideo.jpg) no-repeat center top;*/
-    /*background: linear-gradient(to right, rgba(41, 41, 41, 0.8),  rgba(41, 41, 41, 0.8)), url(../img/montevideo.jpg)  fixed;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/mapa.jpg);
     margin-top: -10px;
     padding-top:20px;
+    padding-bottom:40px;
     text-align:center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 700px;
-    height: 600px;
     width: 100%;
     
     -webkit-background-size: 100%;
@@ -828,8 +872,9 @@ a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    -webkit-filter: contrast(1.4);*/
+    
+    -webkit-filter: grayscale(1);
+    -webkit-filter: contrast(1.5);
     
 }
 
@@ -853,9 +898,10 @@ a:hover{
     background: white !important;
     color: red;
     border: 2px solid #AF1D50 !important;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
     box-shadow: none !important;
+    outline: inherit;
 }
 .btn-enviar{
   padding-left: 20px;
@@ -882,12 +928,78 @@ a:hover{
   font-size: 20px;
   text-transform: uppercase;
 }
+
+.contacto-item{
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+.contacto-item h2{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+}
+.icon{
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    padding: 10px !important;
+    border: 1px solid white;
+}
+.icon i{
+    position: relative;
+    margin: 10px;
+}
+
+
 /*--- END | SECTION CONTACTO ---*/
 
 /*--- FOOTER ---*/
 footer{
-    background-color: rgba(0,0,0,.7);
-    height: 600px;
+    background-color: black;
+}
+
+.logo-footer{
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.logo-footer{
+  -webkit-filter: contrast(1.8);
+}
+.logo-footer img{
+  width: 350px;
+    -moz-filter:grayscale(1);/* Mozilla */
+    -ms-filter:grayscale(1);/* Internet Explorer */
+    -o-filter:grayscale(1);/* Opera */
+    -webkit-filter: grayscale(1); /* Blanco y negro */
+
+}
+.social{
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color: black;
+}
+.social a{
+  color: white !important;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.social a:hover{
+  color: #AF1D50 !important;
+}
+
+.under-footer hr{
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 30%;
+  border:1.5px solid #AF1D50;
 }
 
 .under-footer{
@@ -895,9 +1007,13 @@ footer{
 
 }
 .under-footer h5{
+    padding-top: 0px;
+    padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
 }
 
 /* COLOR PLACEHOLDER */
@@ -2167,24 +2283,24 @@ canvas{margin:0;}
   height: 82px !important;
   margin-top: 0px;
   background-color: rgba(8, 19, 61,0.95) !important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .activo.logo{
     margin-top: 10px !important;
 }
 .activo.logo img{
   width: 230px !important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .activo.menu-index{
   margin-top: 0px !important;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 
@@ -2192,9 +2308,9 @@ canvas{margin:0;}
 .idiomas{
     background: rgba(8, 19, 61,0.95) !important;
     display: block;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .contenedor-idiomas{
     
@@ -2212,13 +2328,13 @@ canvas{margin:0;}
    
     padding-top: 5px;
     padding-bottom: 5px;
-    color:white;
+    color:#007bbe;
     background: transparent !important;
-    border: 1px solid white;
+    border: 1px solid #007bbe;
     
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
     cursor: pointer;
 }
 
@@ -2240,17 +2356,17 @@ canvas{margin:0;}
 .idiomas.activo{
   margin-top: -35px !important;
   background-color: white !important;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .menu-idiomas.activo{
   background-color: white !important;
   margin-top: -35px !important;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .menu-idiomas>li>a.activo{
     font-family: 'Open Sans Condensed', 'Helvetica Neue', sans-serif;
@@ -2263,9 +2379,9 @@ canvas{margin:0;}
     color:white;
     background: black !important;
     border: 1px solid black;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 /* ----- FIN | SECTION IDIOMAS -----*/
@@ -2351,3 +2467,149 @@ canvas{margin:0;}
     /*color: #18bc9c;*/
     background: white;
 }
+
+
+
+
+
+
+
+/* EFECTO HOVER PORTFOLIO*/
+#filters{
+  padding-bottom:30px; 
+}
+figure{
+  padding: 0px !important;
+  width: 100%;
+}
+figure img {
+  height: 250px;
+  width: 100%;
+  opacity: 0;
+}
+
+figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+figure h2 span {
+  font-weight: 800;
+}
+
+figure h2,
+figure p {
+  margin: 0;
+}
+
+figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.effect-oscar {
+/*  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);*/
+  background: rgba(0,0,0,1);
+}
+
+figure.effect-oscar img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+
+}
+
+figure.effect-oscar figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+}
+
+figure.effect-oscar h2 {
+  margin: 20% 0 10px 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+  background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+  opacity: 0.4;
+}
+
+
+
+
+
+

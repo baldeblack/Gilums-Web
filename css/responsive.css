@@ -7,9 +7,9 @@
   }
   .logo>a>img{
       width: 290px;
-    -webkit-transition: all 1s !important;
-    -moz-transition: all 1s !important;
-    transition: all 1s !important;      
+    -webkit-transition: all 0.5s !important;
+    -moz-transition: all 0.5s !important;
+    transition: all 0.5s !important;      
   }
   #logo {
     margin-top: 100px !important;
@@ -38,9 +38,9 @@
 
   .logo>a>img{
       width: 290px;
-    -webkit-transition: all 1s !important;
-    -moz-transition: all 1s !important;
-    transition: all 1s !important;
+    -webkit-transition: all 0.5s !important;
+    -moz-transition: all 0.5s !important;
+    transition: all 0.5s !important;
   }
   #logo {
     margin-top: 70px !important;
