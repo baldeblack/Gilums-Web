@@ -32,7 +32,7 @@
         speed: 500,
         easing: 'easeInOutCubic',
         offset: 0,
-        updateURL: true,
+        updateURL: false,
         callbackBefore: function () {},
         callbackAfter: function () {}
     };
