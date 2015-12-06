@@ -390,6 +390,7 @@ a:hover{
 
 .btn-search-portfolio:focus{
   outline: none;
+  text-decoration: none;
 }
 
 /*--- END | SECTION PORTFOLIO ---*/
@@ -795,6 +796,7 @@ figure{
   padding: 0px !important;
   width: 100%;
   overflow: hidden;
+
 }
 figure img {
   height: 250px;
@@ -805,10 +807,12 @@ figure img {
 figure figcaption {
   padding: 2em;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
+/*  text-transform: uppercase;
+  font-size: 1.25em;*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 figure figcaption::before,
@@ -823,45 +827,37 @@ figure figcaption{
   width: 100%;
   height: 100%;
 }
+
+
+/*.btn-figure > a >i{
+  font-size: 0px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+} 
+.btn-figure > a:hover >i{
+  font-size: 22px;
+  opacity: 1;
+  -webkit-transition: all 0.35s, opacity 0.35s, -webkit-transform 0.35s;
+  transition: all 0.35s, opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+} */
+
 .btn-figure{
     position: relative;
     text-align: center;
     height: 100%;
 }
-.btn-figure > a {
-    display: inline-block;
-    text-align: center;
-    margin-top: 25%;
-    vertical-align: middle;
-    z-index: 1000;
-    white-space: nowrap;
-    border: 2px solid white;
-    color: white;
-    background-color: rgba(0,0,0,.5);
-    font-size: 14;
-    padding: 10px 15px;
-    border-radius: 50%;
-    opacity: 0;
-}
-.btn-figure > a:hover{
-    z-index: 1000;
-/*  text-indent: 200%;*/
-    white-space: nowrap;
-    padding: 5px 10px;
-    border: 2px solid #AF1D50;
-    color: rgba(0,0,0,.8);
-    background-color: #AF1D50;
-    font-size: 14;
-    opacity: 0;
-    padding: 10px 15px;
-    border-radius: 50%;
-}
 
 
 
-figure figcaption > a {
+
+/*figure figcaption > a {
     z-index: 1000;
-/*  text-indent: 200%;*/
+  text-indent: 200%;
     white-space: nowrap;
     border: 2px solid white;
     color: white;
@@ -870,10 +866,10 @@ figure figcaption > a {
     padding: 13px 15px;
     border-radius: 50%;
     opacity: 0;
-}
-figure figcaption > a:hover{
+}*/
+/*figure figcaption > a:hover{
     z-index: 1000;
-/*  text-indent: 200%;*/
+  text-indent: 200%;
     white-space: nowrap;
     padding: 5px 10px;
     border: 2px solid #AF1D50;
@@ -883,7 +879,7 @@ figure figcaption > a:hover{
     opacity: 0;
     padding: 13px 15px;
     border-radius: 50%;
-}
+}*/
 /*---------------*/
 /***** Oscar *****/
 /*---------------*/
@@ -901,7 +897,7 @@ figure.effect-oscar img {
 }
 
 figure.effect-oscar figcaption {
-
+  
 }
 
 figure.effect-oscar figcaption::before {
@@ -912,14 +908,7 @@ figure.effect-oscar figcaption::before {
   left: 30px;
   border: 1px solid #fff;
   content: '';
-}
-
-figure.effect-oscar h2 {
-  margin: 20% 0 10px 0;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 figure.effect-oscar figcaption::before,
@@ -930,6 +919,39 @@ figure.effect-oscar p {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
+figure.effect-oscar figcaption h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+figure.effect-oscar:hover figcaption h3 {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1);
+}
+figure.effect-oscar figcaption p {
+  opacity: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+figure.effect-oscar:hover figcaption p {
+  opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1);
+
+}
 
 figure.effect-oscar:hover h2 {
   -webkit-transform: translate3d(0,0,0);
@@ -937,8 +959,46 @@ figure.effect-oscar:hover h2 {
 }
 figure.effect-oscar:hover a {
   opacity: 1;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(1);
+}
+
+.btn-figure > a {
+    display: inline-block;
+    text-align: center;
+/*    margin-top: 25%;*/
+    vertical-align: middle;
+    z-index: 1000;
+    white-space: nowrap;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    font-size: 13;
+    padding: 5px 15px;
+/*    border-radius: 50%;*/
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+.btn-figure > a:hover{
+    z-index: 1000;
+/*  text-indent: 200%;*/
+    white-space: nowrap;
+    padding: 5px 10px;
+/*    border: 2px solid #AF1D50; */   
+    border: 2px solid white;
+    color: rgba(0,0,0,.8);
+    background-color: white;
+/*    background-color: #AF1D50;*/
+    font-size: 13;
+    padding: 5px 15px;
+   /* border-radius: 50%;*/
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(1);
 }
 figure.effect-oscar:hover figcaption::before{
   opacity: 1;
@@ -947,7 +1007,7 @@ figure.effect-oscar:hover figcaption::before{
 }
 
 figure.effect-oscar:hover figcaption {
-  background-color: rgba(29, 92, 145, 0.9);
+  background-color: rgba(29, 92, 145, 0.7);
 }
 
 figure.effect-oscar:hover img {
@@ -966,19 +1026,57 @@ figure.effect-oscar:hover img {
 
 /*--- SECTION PROCESO ---*/
 .proceso{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/procesob.jpg) 100% 0 fixed;
+    /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/procesob.jpg) 100% 0 fixed;*/
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/seccionp.png) fixed;
+    background-repeat: repeat;
     padding-top:20px;
     text-align:center;
 }
+
+.contenedor-proceso{
+
+}
+
+.item-proceso{
+  padding-bottom: 30px;
+}
+.item-proceso h2,.item-proceso h3{
+    /*font-family: 'Dosis', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.item-proceso .item-titulo{
+  padding-bottom: 20px !important;
+}
+
+.item-proceso img{
+  float: right;
+  width: 300px;
+}
+
+.item-proceso p{
+  color: white;
+  letter-spacing: 2px;
+}
+
 .tab-proceso{
   margin-bottom: 60px;
+}
+.tab-proceso .nav.nav-justified {
+  width: 100%;
 }
 .tab-proceso .nav.nav-justified > li {z-index: 2;}
 .tab-proceso .nav.nav-justified > li > a { position: relative; }
 .tab-proceso .nav.nav-justified > li > a:hover,
 .tab-proceso .nav.nav-justified > li > a:focus { background-color: transparent; border: white;}
 
-.tab-proceso .nav.nav-justified > li > a > img { width: 128px;height: 128px; box-shadow: 0 0 0 3px #1383B9; }
+.tab-proceso .nav.nav-justified > li > a > img {  box-shadow: 0 0 0 3px #1383B9; }
 .tab-proceso .nav.nav-justified > li > a > img { 
     max-width: 100%;
 }
@@ -1042,7 +1140,7 @@ figure.effect-oscar:hover img {
 .tecno-texto h2{
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
-    font-style: italic;
+    /*font-style: italic;*/
     text-align: center;
     color: rgba(0,0,0,0.8) !important;
 
@@ -2760,17 +2858,19 @@ canvas{margin:0;}
 
 
 .portfolio-modal .modal-content {
+    font-family: 'Roboto', sans-serif;
     padding: 100px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .portfolio-modal .modal-content h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0;
     font-size: 3em;
 }
