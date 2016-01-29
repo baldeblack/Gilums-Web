@@ -14,6 +14,8 @@ $(document).ready(function() {
 
 
     $('[data-toggle="tooltip"]').tooltip();
+    
+    $('.link').webuiPopover({width:350,trigger:'hover',style:'inverse',animation:'pop'});;
 
     $(window).scroll(function(){
         window_y = $(window).scrollTop(); //valor al cual se ha movido el scroll
@@ -28,6 +30,8 @@ $(document).ready(function() {
             /*$('.contenedor_header').fadeOut("slow");*/
         }
     });
+
+
     //-------/* ANIMACION TEXTO*//---------//
 
 /*    $('.demo').textillate({
@@ -287,6 +291,7 @@ $(document).ready(function() {
       $('.somos').removeClass('color1');
       $('.somos').removeClass('color2');
       $('.somos').removeClass('color3');
+      $('.somos').removeClass('color4');
     }
 
     $("#btn_gas").click(function(){
@@ -303,6 +308,12 @@ $(document).ready(function() {
       removerClases();
       $('.somos').addClass('color3');
     });
+
+    $("#btn_pm").click(function(){
+      removerClases();
+      $('.somos').addClass('color4');
+    });
+
 
     var wow = new WOW(
       {

@@ -1,7 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Metrophobic|Raleway:100,300|Merriweather+Sans:400,300,300italic,400italic|Lobster|Kavoon|Roboto:400,300,700,700italic|Source+Sans+Pro:200,300,400,200italic,300italic,400italic|Lato:300,400,700|Economica:400,700);
-@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bowlby+One+SC);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,400italic,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-@import url(http://fonts.googleapis.com/css?family=Dosis);
+/*@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bowlby+One+SC);
+@import url(http://fonts.googleapis.com/css?family=Dosis);*/
+
 
 @font-face {
     font-family: 'AndThenItEnds';
@@ -19,21 +22,6 @@
     font-style: normal;
 }
 
-
-/*
----- FONTS ----
-font-family: 'Metrophobic', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Lobster', cursive;
-font-family: 'Lato', Arial, sans-serif;
-font-family: 'Economica', sans-serif;
-font-family: 'Kavoon', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Holtwood One SC', serif;
-font-family: 'Bowlby One SC', cursive;
-font-family: 'Raleway';
-*/
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -296,9 +284,9 @@ a:hover{
 }
 
 .header_section h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     font-size: 60px;
     color: rgb(41,41,41) !important;
@@ -306,7 +294,8 @@ a:hover{
 .header_section_b h1{
     font-size: 50px;
     /*font-family: 'Merriweather Sans', sans-serif;*/
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     color: white !important;
@@ -318,7 +307,7 @@ a:hover{
 
 .header_section_b h3{
    /* font-family: 'Merriweather Sans', sans-serif;*/
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -337,7 +326,7 @@ a:hover{
 }
 .header_section_c h1{
     /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
@@ -501,6 +490,10 @@ a:hover{
 
 .color3{
   background-color: rgb(39, 40, 34);
+}
+
+.color4{
+  background-color: rgb(0, 10, 10);
 }
 
 .info-nosotros p{
@@ -936,7 +929,7 @@ figure.effect-oscar:hover figcaption h3 {
 }
 figure.effect-oscar figcaption p {
   opacity: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: italic;
   font-weight: 300;
@@ -1027,7 +1020,7 @@ figure.effect-oscar:hover img {
 /*--- SECTION PROCESO ---*/
 .proceso{
     /*background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/procesob.jpg) 100% 0 fixed;*/
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(../img/seccionp.png) fixed;
+    background: linear-gradient(to right, rgba(255, 255,255, 0.9),  rgba(255, 255,255, 0.9)), url(../img/seccionp_b.png) fixed;
     background-repeat: repeat;
     padding-top:20px;
     text-align:center;
@@ -1041,7 +1034,7 @@ figure.effect-oscar:hover img {
   padding-bottom: 30px;
 }
 .item-proceso h2,.item-proceso h3{
-    /*font-family: 'Dosis', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
@@ -1065,12 +1058,6 @@ figure.effect-oscar:hover img {
   letter-spacing: 2px;
 }
 
-.tab-proceso{
-  margin-bottom: 60px;
-}
-.tab-proceso .nav.nav-justified {
-  width: 100%;
-}
 .tab-proceso .nav.nav-justified > li {z-index: 2;}
 .tab-proceso .nav.nav-justified > li > a { position: relative; }
 .tab-proceso .nav.nav-justified > li > a:hover,
@@ -1083,27 +1070,58 @@ figure.effect-oscar:hover img {
 .tab-proceso .nav.nav-justified > li.active > a > img,
 .tab-proceso .nav.nav-justified > li:hover > a > img,
 .tab-proceso .nav.nav-justified > li:focus > a > img { 
-  box-shadow: 0 0 0 3px white;
+  box-shadow: 0 0 0 3px #AF1D50;
 }
-.tab-proceso .tab-pane .tab-inner { padding: 10px 0 0px; }
+.tab-proceso .tab-pane .tab-inner { padding: 20px 0 0px; }
 .tab-inner{
-  color: white;
+  color: black;
+  min-height:100px;
 }
 .contenedor-links-p{
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
-
+.contenedor-text-p{
+  margin-bottom: 20px;
+}
 .connecting-line {
     height: 2px;
-    background: #e0e0e0;
+    background: #AF1D50;
     position: absolute;
-    width: 80%;
+    width: 76%;
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 40%;
-    z-index: 1;
+    z-index: 0;
 }
+
+/*
+
+.services{
+  padding:5em 0px;
+}
+.services-left{
+  text-align:center;
+  position:relative;
+}
+.services-left span {
+    position: absolute;
+    background: url(../images/s-link.png) no-repeat;
+    width: 131px;
+    height: 5px;
+    display: block;
+    top: 32%;
+    left: 77.1%;
+}
+.services-left p {
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 20px auto 0;
+    width: 54%;
+    line-height: 1.3em;
+}*/
 
 /*--- END | SECTION PROCESO ---*/
 
@@ -1138,7 +1156,7 @@ figure.effect-oscar:hover img {
   color: rgba(29, 92, 145, 0.8);
 }
 .tecno-texto h2{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     /*font-style: italic;*/
     text-align: center;
