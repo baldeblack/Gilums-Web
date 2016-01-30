@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,400italic,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 /*@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bowlby+One+SC);
@@ -1083,17 +1083,54 @@ figure.effect-oscar:hover img {
   margin-bottom: 100px;
 }
 .thumb-serv{
+  background: transparent !important;
+  border-color: transparent !important;
   padding:0 !important;
+}
+.thumb-serv .img-thumb-serv{
+  background: white;
+}
+
+.thumb-serv img{
+  padding-top:40px;
+  padding-bottom: 0px;
 }
 .thumb-serv .caption{
-  padding:0 !important;
+  background: white;
+  padding:0px !important;
+  padding-left:0px !important;
+  padding-right:0px !important;
+  padding-bottom: 20px !important;
+  padding-top: 10px !important;
+
 }
-.thumb-serv .caption .list-group-item{
+
+.thumb-serv .list-group{
+  background: transparent !important;
+}
+.thumb-serv .list-group-item{
+  background: transparent !important;
+  border-color: transparent !important;
+  color: white;
   text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.thumb-serv .caption .list-group-item span{
-  padding-left: 10px;
-  padding-right: 50px;
+.thumb-serv .list-group-item span{
+  color: white;
+  padding:15px;
+  font-size: 28px;
+  border-radius: 50px;
+  background: #AF1D50;
+}
+
+.texto-acordion{
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+  padding:15px;
+  background: rgba(0,0,0,.6);
+  font-size: 14px;
 }
 
 
@@ -1149,9 +1186,13 @@ figure.effect-oscar:hover img {
 .tab-proceso .nav.nav-justified > li > a > img { 
     max-width: 100%;
 }
+
 .tab-proceso .nav.nav-justified > li.active > a > img,
-.tab-proceso .nav.nav-justified > li:hover > a > img,
-.tab-proceso .nav.nav-justified > li:focus > a > img { 
+.tab-proceso .nav.nav-justified > li:focus > a > img{
+  box-shadow: 0 0 0 3px #1383B9;
+}
+
+.tab-proceso .nav.nav-justified > li:hover > a > img{ 
   box-shadow: 0 0 0 3px #AF1D50;
 }
 .tab-proceso .tab-pane .tab-inner { padding: 20px 0 0px; }

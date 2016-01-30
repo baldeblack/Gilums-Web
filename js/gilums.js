@@ -12,6 +12,10 @@ $(document).ready(function() {
       //callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
     });
 
+    $('.collapse').collapse({
+        parent: true,
+        toggle: false
+    });
 
     $('[data-toggle="tooltip"]').tooltip();
     
