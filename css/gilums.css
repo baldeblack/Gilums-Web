@@ -408,9 +408,15 @@ a:hover{
 #filters{
   padding-bottom:30px; 
 }
+
+.isotope .col-md-2{
+/*  width: 18.66666% !important;*/
+}
+
 figure{
+/*  margin: 10px !important;*/
   padding: 0px !important;
-  width: 100%;
+/*  width: 100%;*/
   overflow: hidden;
 
 }
@@ -1288,7 +1294,7 @@ figure.effect-oscar:hover img {
 
 /*--- SECTION FRASE ---*/
 .frase {
-    background: url(../img/125_2.jpg) 50% 0 fixed;
+    /*background: url(../img/125_2.jpg) 50% 0 fixed;*/
     margin-top: -10px;
     padding-top:20px;
     text-align:center;
@@ -2933,39 +2939,40 @@ canvas{margin:0;}
 }
 
 
-/*.social-icons .icon-social {
-    height: 60px;
-    width: 60px;
 
-    display: inline-block;
 
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 2px solid white;
- 
-}
+/* -- SECCION CONTADOR -- */
 
-.icon-social i{
-    position: relative;
-    margin: auto;
+.contador {
     text-align: center;
+    background: url(../img/contador_bg.jpg) 50% 0 no-repeat scroll;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
+}
+
+.contador strong {
     display: block;
-    color: white !important;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 48px;
+    color: #fff;
 }
-.icon-social:hover i{
-    color: rgba(0,0,0,.8) !important;
+span.count-description {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: capitalize;
+    padding-top: 10px;
 }
-.icon-social:hover,
-.icon-social:focus,
-.icon-social:active,
-.icon-social.active {
-    border: solid 2px white;
-    color: #272822;
-    color: #18bc9c;
-    background: white;
-}*/
 
+.counter-wrap{
+    padding:50px 0;
 
+}
+
+.counter-section .alternate{
+   background-color: rgba(254,82,76, .2);
+}

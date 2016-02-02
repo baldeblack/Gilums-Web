@@ -4,8 +4,9 @@ $(document).ready(function() {
     /*$('.contenedor_header').hide();*/
 
     smoothScroll.init({
-      speed: 1000, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutQuint', // Easing pattern to use
+      speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeOutCubic', // Easing pattern to use
+      scrollOnLoad: true,
       //updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
       offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
       //callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
@@ -35,7 +36,29 @@ $(document).ready(function() {
         }
     });
 
+// Counter
+$(function() {
+    $('.contador-cont').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
 
+});
     //-------/* ANIMACION TEXTO*//---------//
 
 /*    $('.demo').textillate({
@@ -283,7 +306,8 @@ $(document).ready(function() {
     });
     
     $("#texto-dinamico").typed({
-        strings: ["Su idea se hara realidad!", "Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
+        //strings: ["Su idea se hara realidad!", "Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
+        strings: ["Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
         typeSpeed: 60,
         // backspacing speed
         backSpeed: 30,
