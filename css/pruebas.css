@@ -2,28 +2,8 @@
 
 /*--- PRUEBA ---*/
 
-.letra1{
-    font-family: 'Pacifico', cursive !important;
-    color: white;
-    font-size:50px;
-}
-.letra2{
-    /*font-family: 'Metrophobic', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-family: 'Lato', Arial, sans-serif;
-    font-family: 'Economica', sans-serif;
-    font-family: 'Kavoon', cursive;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Holtwood One SC', serif;
-*/
-    font-family: 'Raleway' !important;
-    color: white;
-    font-size:70px;
-    display: inline-block;
-}
+
 .letra3{
-   /* font-family: 'Holtwood One SC', serif !important;*/
     font-family: 'Bowlby One SC', cursive !important;
     color: white;
     font-size:70px;

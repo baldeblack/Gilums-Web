@@ -59,6 +59,122 @@ $(function() {
     });
 
 });
+
+
+$(function() {
+    $('.contador-gas').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
+
+$(function() {
+    $('.contador-bry').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
+
+$(function() {
+    $('.contador-cas').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
+
+$(function() {
+    $('.contador-san').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
+
+$(function() {
+    $('.contador-pm').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
     //-------/* ANIMACION TEXTO*//---------//
 
 /*    $('.demo').textillate({
@@ -308,6 +424,7 @@ $(function() {
     $("#texto-dinamico").typed({
         //strings: ["Su idea se hara realidad!", "Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
         strings: ["Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
+        startDelay: 7100,
         typeSpeed: 60,
         // backspacing speed
         backSpeed: 30,
@@ -389,7 +506,7 @@ $(window).load(function(){
     |--------------------------------------------------------------------------
     */
     $("html").niceScroll({styler:"fb",cursorcolor:"#007BBE", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});
-    $('#status').delay(5000).fadeOut(); // will first fade out the loading animation
-    $('#preloader').delay(5300).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(5300).css({'overflow':'visible'});
+    $('#status').delay(7000).fadeOut(); // will first fade out the loading animation
+    $('#preloader').delay(7300).fadeOut('slow'); // will fade out the white DIV that covers the website.
+    $('body').delay(7300).css({'overflow':'visible'});
 });
