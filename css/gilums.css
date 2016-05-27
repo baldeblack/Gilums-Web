@@ -749,6 +749,37 @@ figure.effect-oscar:hover img {
     }  
 }
 
+
+.somos_mobile{
+  background-color: rgb(47, 47, 47);
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.somos_mobile .item-somos_mobile{
+  background:transparent !important;
+  border-color:transparent !important;
+}
+
+.somos_mobile .item-somos_mobile .img-item-somos_mobile img{
+  width: 228px;
+  height: 228px;
+  box-shadow: 0 0 0 5px white;
+}
+
+.somos_mobile .item-somos_mobile .img-caption-somos_mobile h3{
+  color:white;
+}
+.somos_mobile .item-somos_mobile .img-caption-somos_mobile h4{
+  color:#CBCBCB;
+}
+
+.somos_mobile .item-somos_mobile .img-caption-somos_mobile .social-item-mobile ul{
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  right:0px;
+}
 /*--- END | SECTION SOMOS ---*/
 
 /*--- SECTION HACEMOS ---*/
@@ -2538,6 +2569,7 @@ canvas{margin:0;}
   right:0px;
   float: right;
 }
+
 .social_left ul{
   position: relative;
   display: inline-block;
