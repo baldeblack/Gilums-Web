@@ -152,6 +152,28 @@ $(function() {
     });
 
 });
+$(function() {
+    $('.contador-fra').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function() {
+                var $this = $(this);
+                $({
+                    Counter: 0
+                }).animate({
+                    Counter: $this.text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+});
 
 $(function() {
     $('.contador-pm').on('inview', function(event, visible, visiblePartX, visiblePartY) {
@@ -397,6 +419,7 @@ $(function() {
 
                 $('.logo').addClass('activo');
                 $('.menu-index').addClass('activo');
+                $('.menu-index-mobile').addClass('activo');
                 $('.contenedor_header').addClass('activo');
                 
                 $('.menu-idiomas').addClass('activo');
@@ -409,7 +432,7 @@ $(function() {
                 $('.logo').removeClass('activo');
                 $('.menu-index').removeClass('activo');
                 $('.contenedor_header').removeClass('activo');
-                
+                $('.menu-index-mobile').removeClass('activo');
                 $('.menu-idiomas').removeClass('activo');
                 $('.idiomas').removeClass('activo');
                 
@@ -420,17 +443,23 @@ $(function() {
         }
 
     });
-    
-    $("#texto-dinamico").typed({
-        //strings: ["Su idea se hara realidad!", "Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
-        strings: ["Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
-        startDelay: 7100,
-        typeSpeed: 60,
-        // backspacing speed
-        backSpeed: 30,
-        // time before backspacing
-        backDelay: 1500,
+
+    $(function () {
+        var tam = window.innerWidth;
+        if (tam > 767) {
+            $("#texto-dinamico").typed({
+              //strings: ["Su idea se hara realidad!", "Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
+              strings: ["Simple, Creativo, Adaptable.", "Esto es <strong>Gilums!</strong>"],
+              startDelay: 7100,
+              typeSpeed: 60,
+              // backspacing speed
+              backSpeed: 30,
+              // time before backspacing
+              backDelay: 1500,
+          });
+        }
     });
+ 
 
     function removerClases(){
       $('.somos').removeClass('color1');
@@ -453,10 +482,15 @@ $(function() {
       removerClases();
       $('.somos').addClass('color3');
     });
-
-    $("#btn_pm").click(function(){
+    
+    $("#btn_fra").click(function(){
       removerClases();
       $('.somos').addClass('color4');
+    });
+    
+    $("#btn_pm").click(function(){
+      removerClases();
+      $('.somos').addClass('color3');
     });
 
 

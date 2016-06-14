@@ -107,7 +107,7 @@
 	    </div>-->
         
         <!-- IDIOMAS  -->
-        <div class="idiomas navbar-fixed-top navbar-collapse2 collapse">
+        <div class="idiomas navbar-fixed-top navbar-collapse2 collapse hidden-xs">
             <div class="container contenedor-idiomas">
                 <ul class="nav navbar-nav menu-idiomas navbar-right text-center">                    
                     <li class="active"><a href="#">ES</a></li>
@@ -123,20 +123,10 @@
 					<div class="logo" data-wow-duration="1s" data-wow-delay="0.2s">
 						<a data-scroll href="#home"><img class="" src="img/logo1.png" alt=""></a>
 					</div>
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse2">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
 				</div>
 			
 				<!-- MENU-->
-				<div class="navbar-collapse collapse navbar-right menu" data-wow-duration="1s" data-wow-delay="0.2s">
+				<div class="navbar-right menu hidden-xs" data-wow-duration="1s" data-wow-delay="0.2s">
 					<ul class="nav navbar-nav right inner menu-index">
 						<li><a data-scroll href="#portfolio">Trabajos</a></li>
 						<li><a data-scroll href="#hacemos" >Servicios</a></li>
@@ -144,6 +134,16 @@
 						<li><a data-scroll href="#somos" >Nosotros</a></li>
                         <li><a data-scroll href="#blog">Blog</a></li>
 						<li><a data-scroll href="#contact" >Contacto</a></li>
+					</ul>
+				</div>
+
+				<div class="navbar-right hidden-sm hidden-md hidden-lg" data-wow-duration="1s" data-wow-delay="0.2s">
+					<ul class="right menu-index-mobile">
+						<li><a data-scroll class="center-block" href="#portfolio"><i class="fa fa-briefcase"></i></a></li>
+						<li><a data-scroll href="#hacemos" ><i class="fa fa-wrench"></i></a></li>
+                        <li><a data-scroll href="#proceso"><i class="fa fa-cogs"></i></a></li>
+						<li><a data-scroll href="#somos" ><i class="fa fa-street-view"></i></a></li>
+						<li><a data-scroll href="#contact" ><i class="fa fa-envelope"></i></a></li>
 					</ul>
 				</div>
 				<!-- END | MENU-->
@@ -159,7 +159,7 @@
 			<section class="section_contenido_dinamico" data-speed="4" data-type="background">
 				<div class="container-fluid">
 	               <div class="msj-principal text-center">                        
-                        <h1 class="letra2" id="texto-dinamico" style="white-space:pre"></h1>
+                        <h1 class="letra2 hidden-xs" id="texto-dinamico" style="white-space:pre"></h1>
 	                    <h1 class="letra1">Cambiando la Web</h1>
 	               </div> 
 				</div>
@@ -429,7 +429,7 @@
 					<div class="header_section_b text-center">
 						<h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">SOBRE NOSOTROS</h1>
 						<hr class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                         <h3 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">Trabajar en equipo es la esencia para el buen ambiente laboral y la calidad de nuestros servicios.<br>Siempre lo haremos mirar la mejor version de la solucion.</h3>
+                        <h3 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">Trabajar en equipo es la esencia para el buen ambiente laboral y la calidad de nuestros servicios.<br>Siempre lo haremos mirar la mejor version de la solucion.</h3>
 					</div><br>
 					<div class="hidden-xs somos_contenido center-block">    
                         <div class="row">
@@ -450,6 +450,11 @@
                                         <li role="presentation" class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.3s">
                                             <a href="#cas" id="btn_cas" aria-controls="cas" role="tab" data-toggle="tab">
                                                 <img class="img-circle" src="img/nosotros/castro.jpg" />
+                                            </a>
+                                        </li>
+                                        <li role="presentation" class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                                            <a href="#fra" id="btn_fra" aria-controls="fra" role="tab" data-toggle="tab">
+                                                <img class="img-circle" src="img/nosotros/fratti.jpg" />
                                             </a>
                                         </li>
                                         <li role="presentation" class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -493,13 +498,13 @@
 									<div class="col-lg-12 social_left">
                                         <ul class="list-inline">
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+				                                <a href="https://uy.linkedin.com/in/gastonbaldenegro" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+				                                <a href="https://github.com/baldeblack" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+				                                <a href="https://twitter.com/gbaldeblack" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
 				                            </li>
 				                        </ul>
 				                    </div>
@@ -541,14 +546,17 @@
 									<div class="col-lg-12 social_right">
 				                        <ul class="list-inline">
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+				                                <a href="https://www.facebook.com/bryan.braz" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+				                                <a href="https://www.linkedin.com/in/bryan-ferreira-994b9637" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+				                                <a href="https://twitter.com/bryanbraz" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
 				                            </li>
+				                            <li>
+				                                <a href="https://github.com/bryra" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+				                            </li>			
 				                        </ul>
 				                    </div>
                             	</div> 
@@ -583,14 +591,17 @@
 									<div class="col-lg-12 social_left">
 				                        <ul class="list-inline">
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+				                                <a href="https://www.linkedin.com/in/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+				                                <a href="https://plus.google.com/u/0/+IgnacioCastrouy" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
 				                            </li>
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+				                                <a href="https://github.com/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 				                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                            </li>
 				                        </ul>
 				                    </div>
                             	</div>
@@ -600,7 +611,49 @@
                             </div> 
                         </div> 
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="pm">
+                    <div role="tabpanel" class="tab-pane fade" id="fra">
+                        <div class="tab-inner container">
+                        	<div class="col-md-12  info-nosotros">
+                            	<div class="col-md-7">
+                            		<div class="titulo-nosotros text-left">
+                            			<h1>Sandino Fratti <small>DESARROLLADOR</small></h1>
+                            		</div>
+									<div class="text-left" style="padding-top:20px;">
+										<div class="text-center contador-fra">
+					                        <div class="col-sm-4 counter-wrap">
+					                            <strong><span class="timer">90</span>%</strong>
+					                            <span class="count-description">Desarrollo Web</span>
+					                        </div><!-- /.col-sm-3 -->
+
+					                        <div class="col-sm-4 counter-wrap" >
+					                            <strong><span class="timer">80</span>%</strong>
+					                            <span class="count-description">Mobile</span>
+					                        </div><!-- /.col-sm-3 -->
+
+					                        <div class="col-sm-4 counter-wrap">
+					                            <strong><span class="timer">100</span>%</strong>
+					                            <span class="count-description">.NET</span>
+					                        </div><!-- /.col-sm-3 -->
+					                    </div><!-- /.row -->
+									</div>
+									<div class="col-lg-12 social_left">
+				                        <ul class="list-inline">
+				                            <li>
+				                                <a href="https://www.linkedin.com/in/sandino-fratti-45758665" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+				                            </li>
+				                            <li>
+				                                <a href="https://github.com/sandinof" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+				                            </li>
+				                        </ul>
+				                    </div>
+                            	</div>
+                            	<div class="col-md-5 img-somos">
+									<img src="img/nosotros/bat1.png" class="img-responsive" alt="">
+                            	</div>
+                            </div> 
+                        </div> 
+                    </div>
+					<div role="tabpanel" class="tab-pane fade" id="pm">
                         <div class="tab-inner container">
                         	<div class="col-md-12  info-nosotros">
                             	<div class="col-md-7">
@@ -618,23 +671,17 @@
 					                            <strong><span class="timer">1250</span>+</strong>
 					                            <span class="count-description">Cant. Tutoriales</span>
 					                        </div><!-- /.col-sm-3 -->
-
-					                        <div class="col-sm-4 counter-wrap">
+		
+					                        <!--<div class="col-sm-4 counter-wrap">
 					                            <strong><span class="timer">10000</span>+</strong>
 					                            <span class="count-description">Peliculas vistas</span>
-					                        </div><!-- /.col-sm-3 -->
+					                        </div> /.col-sm-3 -->
 					                    </div><!-- /.row -->
 									</div>
 									<div class="col-lg-12 social_left">
 				                        <ul class="list-inline">
 				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-				                            </li>
-				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-				                            </li>
-				                            <li>
-				                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+				                                <a href="https://github.com/Elrockero" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 				                            </li>
 				                        </ul>
 				                    </div>
@@ -644,7 +691,7 @@
                             	</div>
                             </div> 
                         </div> 
-                    </div>
+                    </div>  
                 </div>
 				<div class="hidden-sm hidden-md hidden-lg somos_mobile">
 					<div class="container">
@@ -657,15 +704,15 @@
 						        <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Gastón Baldenegro</h3>
 						        <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Desarrollador Web</h4>
 						        <div class="col-lg-12 social-item-mobile">
-		                            <ul class="list-inline">
+                                    <ul class="list-inline">
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+			                                <a href="https://uy.linkedin.com/in/gastonbaldenegro" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+			                                <a href="https://github.com/baldeblack" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+			                                <a href="https://twitter.com/gbaldeblack" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
 			                            </li>
 			                        </ul>
 			                    </div>
@@ -681,16 +728,19 @@
 						        <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Bryan Ferreira</h3>
 						        <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Desarrollador Web</h4>
 						        <div class="col-lg-12 social-item-mobile">
-		                            <ul class="list-inline">
+			                        <ul class="list-inline">
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+			                                <a href="https://www.facebook.com/bryan.braz" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+			                                <a href="https://www.linkedin.com/in/bryan-ferreira-994b9637" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+			                                <a href="https://twitter.com/bryanbraz" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
 			                            </li>
+			                            <li>
+			                                <a href="https://github.com/bryra" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+			                            </li>			
 			                        </ul>
 			                    </div>
 						      </div>
@@ -705,21 +755,45 @@
 						        <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Ignacio Castro</h3>
 						        <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Desarrollador Web</h4>
 						        <div class="col-lg-12 social-item-mobile">
-		                            <ul class="list-inline">
+				                    <ul class="list-inline">
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+			                                <a href="https://www.linkedin.com/in/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+			                                <a href="https://plus.google.com/u/0/+IgnacioCastrouy" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
 			                            </li>
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+			                                <a href="https://github.com/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 			                            </li>
+                                        <li>
+                                            <a href="https://twitter.com/nachojcastro" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                        </li>
 			                        </ul>
 			                    </div>
 						      </div>
 						    </div>
 					    </div>
+					 	<div class="col-md-12">
+							<div class="thumbnail item-somos_mobile">
+						      <div class="img-item-somos_mobile ">
+						      	 <img class="img-circle center-block wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" src="img/nosotros/fratti.jpg" alt="...">
+						      </div>
+						      <div class="caption img-caption-somos_mobile text-center">
+						        <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Sandino Fratti</h3>
+						        <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Desarrollador Web</h4>
+						        <div class="col-lg-12 social-item-mobile">
+			                        <ul class="list-inline">
+			                            <li>
+			                                <a href="https://www.linkedin.com/in/sandino-fratti-45758665" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+			                            </li>
+			                            <li>
+			                                <a href="https://github.com/sandinof" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+			                            </li>
+			                        </ul>
+			                    </div>
+						      </div>
+						    </div>
+					    </div>	
 						<div class="col-md-12">
 							<div class="thumbnail item-somos_mobile">
 						      <div class="img-item-somos_mobile ">
@@ -729,15 +803,9 @@
 						        <h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Pablo Mendez</h3>
 						        <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Desarrollador Web</h4>
 						        <div class="col-lg-12 social-item-mobile">
-		                            <ul class="list-inline">
+			                        <ul class="list-inline">
 			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-			                            </li>
-			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-			                            </li>
-			                            <li>
-			                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+			                                <a href="https://github.com/Elrockero" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
 			                            </li>
 			                        </ul>
 			                    </div>
@@ -797,7 +865,7 @@
 					</div>
 				</div>
 	            <div class="container formulario-contacto">
-	                <div class="col-md-6">                   
+	                <div class="col-xs-12 col-sm-6 col-md-6">                   
 	                    <form role="form">
 	                        <div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.1s">
 	                            <input type="text" class="form-input" id="name" name="name" placeholder="Nombre Completo*" required>
@@ -818,22 +886,22 @@
 	                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btn-enviar wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.6s">Enviar</button>
 	                    </form>
 	                </div>
-	                <div class="col-md-6 contacto-items">
-                        <div class="col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.1s">
+	                <div class="col-xs-12 col-sm-6 col-md-6 contacto-items">
+                        <div class="col-xs-6 col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.1s">
                             <div class="icon">
                                 <i class="fa fa-phone fa-2x"></i>
                             </div>
                             <h2>Phone</h2>
                             <p>+598 99394334<br>+598 98441122</p>		
 					   </div>
-                       <div class="col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.2s">
+                       <div class="col-xs-6 col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.2s">
                             <div class="icon">
                                 <i class="fa fa-envelope fa-2x"></i>
                             </div>
                             <h2>Email</h2>
                             <p>info@gilums.com</p>		
 					   </div>
-                       <div class="col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.3s">
+                       <div class="col-xs-12 col-sm-4 col-md-12 contacto-item text-center wow fadeInUp" data-wow-duration="1s" data-wow-offset="10" data-wow-delay="0.3s">
                             <div class="icon">
                                 <i class="fa fa-map-marker  fa-2x"></i>
                             </div>

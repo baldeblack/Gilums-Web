@@ -43,7 +43,6 @@ button.navbar-toggle:hover{
 }
 .contenedor_header {
   margin-top: 35px;
-  height: 112px !important;
   background-color: rgba(0,56,100,.8) !important;
   font-size: 20px;
   -webkit-transition: all 0.5s;
@@ -573,7 +572,7 @@ figure.effect-oscar:hover img {
 }
 .portfolio-modal .close-modal .lr {
   z-index: 1051;
-  width: 1px;
+  width: 2px;
   height: 75px;
   margin-left: 35px;
   background-color: #2c3e50;
@@ -583,7 +582,7 @@ figure.effect-oscar:hover img {
 }
 .portfolio-modal .close-modal .lr .rl {
   z-index: 1052;
-  width: 1px;
+  width: 2px;
   height: 75px;
   background-color: #2c3e50;
   -webkit-transform: rotate(90deg);
@@ -690,12 +689,12 @@ figure.effect-oscar:hover img {
 .img-somos img{
   width: 700px;
 }
-.contador-gas,.contador-bry,.contador-cas,.contador-san,.contador-pm {
+.contador-gas,.contador-bry,.contador-cas,.contador-san,.contador-pm,.contador-fra {
   text-align: center;
   font-family: 'Raleway';
   font-weight: 200;
 }
-.contador-gas strong,.contador-bry strong,.contador-cas strong,.contador-san strong,.contador-pm strong{
+.contador-gas strong,.contador-bry strong,.contador-cas strong,.contador-san strong,.contador-pm strong,.contador-fra strong{
   display: block;
   font-size: 30px;
   color: #fff;
@@ -704,6 +703,7 @@ figure.effect-oscar:hover img {
 .contador-bry span.count-description,
 .contador-cas span.count-description,
 .contador-san span.count-description,
+.contador-fra span.count-description,
 .contador-pm span.count-description{
   display: block;
   color: #fff;
@@ -715,6 +715,7 @@ figure.effect-oscar:hover img {
 .contador-bry .counter-wrap,
 .contador-cas .counter-wrap,
 .contador-san .counter-wrap,
+.contador-fra .counter-wrap,
 .contador-pm .counter-wrap{
   padding:0px 0;
 }
@@ -722,6 +723,7 @@ figure.effect-oscar:hover img {
 .contador-bry .counter-section .alternate,
 .contador-cas .counter-section .alternate,
 .contador-san .counter-section .alternate,
+.contador-fra .counter-section .alternate,
 .contador-pm .counter-section .alternate{
  background-color: rgba(254,82,76, .2);
 }
@@ -752,8 +754,7 @@ figure.effect-oscar:hover img {
 
 .somos_mobile{
   background-color: rgb(47, 47, 47);
-  padding-top:40px;
-  padding-bottom:40px;
+  padding-bottom:20px;
 }
 
 .somos_mobile .item-somos_mobile{
@@ -762,8 +763,8 @@ figure.effect-oscar:hover img {
 }
 
 .somos_mobile .item-somos_mobile .img-item-somos_mobile img{
-  width: 228px;
-  height: 228px;
+  width: 150px;
+  height: 150px;
   box-shadow: 0 0 0 5px white;
 }
 
@@ -2422,6 +2423,7 @@ xpush
   border-radius:11px;
 }
 canvas{margin:0;}
+
 .contenedor_header.activo{
   height: 82px !important;
   margin-top: 0px;
@@ -2720,7 +2722,21 @@ canvas{margin:0;}
 /*--- SECTION PRESUPUESTO ---*/
 
 .section_contenido_presupuesto{
-  background: linear-gradient(to right, rgba(0, 56, 113, 0.8),  rgba(0, 56, 113, 0.8)), url(../img/back3b.jpg) 50% 0 fixed;
+  background: -webkit-linear-gradient(left, rgba(0, 56, 113, 0.8), rgba(0, 56, 113, 0.8)), url(../img/back3b.jpg) fixed;
+  background: -o-linear-gradient(left, rgba(0, 56, 113, 0.8), rgba(0, 56, 113, 0.8)), url(../img/back3b.jpg) fixed;
+  background: linear-gradient(to right, rgba(0, 56, 113, 0.8), rgba(0, 56, 113, 0.8)), url(../img/back3b.jpg) fixed;
+
+  background-attachment: relative;
+  background-position: center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 .formulario-presup{
   padding-top:220px;
